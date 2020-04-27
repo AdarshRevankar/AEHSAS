@@ -1,6 +1,10 @@
 package com.adrino.aehsas;
 
 import java.util.Scanner;
+//Allocation Logic code.
+//Date: 09-11-2018|12-11-2018|
+//Work:Creation|
+//To allocate Student seat to respective class
 
 class listPointer {
     int left;
@@ -71,6 +75,8 @@ public class Main {
         for (int i = 1; i <= classCount; i++) {
             stuListPointer = classRooms[i].allocateStudentsToSeat(sList, stuListPointer, totalStudents);
             classRooms[i].printClassRoomArrangemet();
+
+            //classRooms[i].printSeated(sList, totalStudents);
         }
     }
 }
